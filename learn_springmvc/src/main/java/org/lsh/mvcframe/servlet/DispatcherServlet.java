@@ -1,4 +1,4 @@
-package main.java.org.lsh.mvcframe.servlet;
+package org.lsh.mvcframe.servlet;
 
 
 import org.lsh.demo.controller.HelloController;

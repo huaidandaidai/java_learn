@@ -1,4 +1,4 @@
-package main.java.org.lsh.demo.controller;
+package org.lsh.demo.controller;
 
 import org.lsh.mvcframe.annotation.Autowried;
 import org.lsh.mvcframe.annotation.Controller;

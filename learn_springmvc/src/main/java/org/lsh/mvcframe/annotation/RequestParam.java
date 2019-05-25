@@ -1,4 +1,4 @@
-package main.java.org.lsh.mvcframe.annotation;
+package org.lsh.mvcframe.annotation;
 
 import java.lang.annotation.*;
 
