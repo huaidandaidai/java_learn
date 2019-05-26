@@ -7,12 +7,12 @@
 ##  缓存
 **内存缓存**：预先将数据写到了容器之中等数据存储单元，就是软件内存缓存；
 
-内存缓存淘汰机制：[内存淘汰机制](https://blog.csdn.net/youanyyou/article/details/78989956)
+**内存缓存淘汰机制**：[内存淘汰机制](https://blog.csdn.net/youanyyou/article/details/78989956)
  1. FIFO (First In ,First Out)  先进先出；如果一个数据最先进入缓存，则应该最早淘汰掉。
  2. LFU  (Least Frequently Used) 最不频繁使用的；使用一个计数器来记录条目被访问的频率，最低访问数的条目最先被移除。
  3. LRU  (Least Recently Used)   最近使用最少的;将最近使用的条目存放到缓存的顶端，当缓存达到极限后，条目从底部开始移除。
  
- LRU算法实现：
+ **LRU算法实现**：
  
  ![示例图](https://github.com/huaidandaidai/java_learn/blob/master/learn_data_structure/src/org/lsh/lru/LRU%E7%BC%93%E5%AD%98%E6%B7%98%E6%B1%B0%E6%9C%BA%E5%88%B6.jpg)
  1. 新数据插入到链表头部；
