@@ -55,7 +55,7 @@ public class LRULinkedList<T> extends LinkedList<T> {
     }
 
     public static void main(String[] args) {
-        LRULinkedList<Integer> lruLinkedList=new LRULinkedList<>(5);
+        LRULinkedList<Integer> lruLinkedList=new LRULinkedList<Integer>(5);
         for (int i = 0; i < 10; i++) {
             lruLinkedList.lruPut(i);
             lruLinkedList.toString();
