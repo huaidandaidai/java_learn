@@ -107,14 +107,31 @@ JDK1.6版本  运行结果为false；
   ## 多线程
   
   ### 线程和进程的区别
+  1. 进程是分配资源的最小单位(包括CPU/内存等)
+  2. 线程是依赖于进程而存在的，是CPU执行的最小单元
   
   ### 线程的实现方式
   1. 继承Thread类（jdk官方方法之一）
   2. 实现Runnable接口(jdk官方方法之一)
   3. 接口callable(有返回值的)
   
+  ### 线程的状态(jdk)
+  1. new （新建）
+  2. runnable(运行)
+  3. blocked(阻塞)
+  4. waiting(等待)
+  5. timed_waitinbg
+  6. terminated(结束)
+  
+    New ——> runnable ——>terminated
+           //   ||   \\
+          //    ||    \\
+     blocked waiting  timed_waiting
+  
   ### 线程的中断方法
-  1. stop():已经被废弃，此方法会强制的中止线程，会导致资源处于非正常的状态下。
-  2. interrupt():不会主动中断线程，只是将中断标志位置为true；
-  3. isInterrupted()：检查中断标志位
-  4. static isInterrupted():检查中断标志是否为true，若为true执行方法，并将标志置为flase。
+  1. stop():已经被废弃，此方法会强制的中止线程，终结一个线程时不会保证线程的资源正常释放，通常是没有给予线程完成资源释放工作的机会，因此会导致程序可能工作在不确定状态下。
+  2. suspend():在调用后，线程不会释放已经占有的资源（比如锁），而是占有着资源进入睡眠状态，这样容易引发死锁问题.
+  3. interrupt():不会主动中断线程，只是将中断标志位置为true；
+  4. isInterrupted()：检查中断标志位
+  5. static isInterrupted():检查中断标志是否为true，若为true执行方法，并将标志置为flase。
+  
