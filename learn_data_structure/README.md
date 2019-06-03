@@ -135,3 +135,5 @@ JDK1.6版本  运行结果为false；
   4. isInterrupted()：检查中断标志位
   5. static isInterrupted():检查中断标志是否为true，若为true执行方法，并将标志置为flase。
   
+  ### 线程池
+  
