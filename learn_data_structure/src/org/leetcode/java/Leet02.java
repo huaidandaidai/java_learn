@@ -1,4 +1,4 @@
-package org.leetcode;
+package org.leetcode.java;
 
 public class Leet02 {
     public static int reverse(int x) {
