@@ -30,3 +30,9 @@ from Scores s1 join Scores s2
 on s1.Score <= s2.Score
 group by s1.id
 order by Rank
+
+-- 其他答案
+select score ,
+(select count(distinct(score)) from scores b where b.score>=a.score) rank
+from scores a
+order by score desc
