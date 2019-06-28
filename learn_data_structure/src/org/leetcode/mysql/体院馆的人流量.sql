@@ -33,4 +33,4 @@ and (
      (a.id = b.id-1 and b.id = c.id -1) or
      (a.id = b.id-1 and a.id = c.id +1) or
      (a.id = b.id+1 and b.id = c.id +1)
-)
+) order by a.id asc
