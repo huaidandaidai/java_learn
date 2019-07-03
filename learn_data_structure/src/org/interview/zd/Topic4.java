@@ -1,5 +1,8 @@
 package org.interview.zd;
 
+/**
+ * 输入: ''Hello World'' 实现输出‘’World Hello''
+ */
 public class Topic4 {
     public static void main(String[] args) {
         String s="Hello world";
