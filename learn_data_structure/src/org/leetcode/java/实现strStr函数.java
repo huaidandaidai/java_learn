@@ -25,7 +25,7 @@ package org.leetcode.java;
  */
 public class 实现strStr函数 {
     public int strStr(String haystack, String needle) {
-        if(needle == ""){
+        if("".equals(needle)){
             return 0;
         }
         int h_len = haystack.length();
@@ -34,7 +34,7 @@ public class 实现strStr函数 {
             if(h_len - i < n_len){
                 return -1;
             }
-            if(haystack.substring(i, i+n_len) == needle){
+            if(haystack.substring(i, i+n_len).equals(needle)){
                 return i;
             }
         }
