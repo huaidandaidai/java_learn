@@ -14,7 +14,20 @@ Object类包含一个静态代码块，12个方法(1个private、1个protected�
     
 ### getClass方法
 
-### 
+###  hashCode方法
+### equals方法
+
+### clone方法
+
+### toString方法
+
+### notify
+
+### notifyALL
+
+### wait
+
+### finalize
 
 
 ## Object类的骚操作
